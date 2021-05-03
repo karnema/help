@@ -1,0 +1,178 @@
+@require './custom-blocks'
+@require './arrow'
+@require '~vuepress.rtl'
+
+
+// fonts
+@font-face
+  font-weight: 300
+  font-style: normal
+  font-family: vazir
+  src: url('/fonts/vazir/Vazir-Light-FD.woff') format("woff")
+
+@font-face
+  font-weight: 200
+  font-style: normal
+  font-family: vazir
+  src: url('/fonts/vazir/Vazir-Medium-FD.woff') format("woff")
+
+@font-face
+  font-weight: normal
+  font-style: normal
+  font-family: vazir
+  src: url('/fonts/vazir/Vazir-FD.woff') format("woff")
+
+.sidebar-heading .arrow
+  left 0 !important
+
+.arrow.right {
+  border-top: 4px solid transparent !important
+  border-left: 4px solid transparent !important
+  border-right: 6px solid #ccc !important
+}
+
+body
+  font-family vazir !important
+
+
+.el-tabs__nav
+  float right !important
+
+code, div[class*="language-"] pre, div[class*="language-"] pre[class*="language-"]
+  direction ltr !important
+
+.inner
+  display flex
+  justify-content space-between
+  width: 100%;
+  flex-direction row-reverse
+
+
+.el-tabs--border-card > .el-tabs__header .el-tabs__item.is-active,
+.el-tabs--border-card > .el-tabs__header .el-tabs__item:not(.is-disabled):hover
+  color: #3ecc97
+
+
+.custom-block.tip
+  border-color: #3ecc97
+
+.custom-block.danger
+  border-color: #fc5f5f;
+
+.sidebar-group a.sidebar-link
+  text-transform capitalize
+
+
+.sidebar-button
+  right 1rem
+.navbar .links
+  right: auto !important
+  left 1.5rem
+  padding-left: 0 !important;
+  padding-right: 1.5rem ;
+.navbar .logo
+  margin-right: 0 !important;
+  margin-left: 0.8rem !important;
+@media (max-width: 719px)
+
+  .sidebar
+    transform: translateX(100%) ;
+  .navbar {
+    padding-right: 4rem !important;
+    padding-left: 0 !important;
+  }
+  .page {
+    padding-right: 0 !important;
+  }
+
+
+.search-box .suggestions.align-right {
+  right: auto !important;
+  left: 0 !important;
+}
+
+
+.inner{
+  flex-direction row;
+}
+
+
+.navbar
+  display flex
+
+.navbar .links
+  position static
+  width: calc(100% - 550px);
+  flex-direction row-reverse
+  @media (max-width: 1200px)
+    margin-right: auto;
+
+
+
+.nav-links.can-hide
+  margin-left: 0;
+
+
+
+.site-name.can-hide
+  @media (max-width: 1200px)
+    font-size 14px !important
+
+
+.search-box .suggestions
+  left 0
+
+.nav-links .nav-item
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+
+.features
+    border-top 0 solid #eaecef
+    padding 1.2rem 0
+    margin-top 2.5rem
+    display flex
+    flex-wrap wrap
+    align-items flex-start
+    align-content strech
+    justify-content space-between
+
+.feature
+    text-align center
+    flex-grow 1
+    flex-basis 30%
+    max-width 21%
+    padding-bottom 25px
+    padding-top 25px
+    border 1px solid transparent
+    cursor pointer
+    &:hover
+        background-color #fdfdfd
+        border-radius 14px
+        border 1px solid #f1f1f1
+    h2
+        font-size 1.4rem
+        font-weight 500
+        border-bottom none
+        padding-bottom 0
+        color #3a5169
+    p
+        color #4e6e8e
+
+.footer
+    padding 2.5rem
+    border-top 1px solid #eaecef
+    text-align center
+    color #4e6e8e
+    font-size 14px
+
+@media (max-width:719px)
+    .features
+        flex-direction none
+    .feature
+        max-width 100%
+        padding 0 2.5rem
+        padding-bottom 25px
+        padding-top 25px
+
+.home .header-anchor
+    display none
