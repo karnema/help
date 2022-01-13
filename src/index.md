@@ -16,10 +16,6 @@ tagline:
         <img src="/icons/payments.png" width="70" height="70" />
         <h2>دریافت و پرداخت پول</h2> 
     </a>
-    <a class="feature" href="/wallet">
-        <img src="/icons/wallet.png" width="70" height="70" />
-        <h2>کیف پول</h2> 
-    </a>
     <a class="feature" href="/due-date">
         <img src="/icons/due-date.png" width="70" height="70" />
         <h2>تاریخ انجام کار</h2> 
