@@ -20,10 +20,6 @@ tagline:
         <img src="/icons/wallet.png" width="70" height="70" />
         <h2>کیف پول</h2> 
     </a>
-    <a class="feature" href="/badges">
-        <img src="/icons/badges.png" width="70" height="70" />
-        <h2>نشان</h2> 
-    </a>
     <a class="feature" href="/due-date">
         <img src="/icons/due-date.png" width="70" height="70" />
         <h2>تاریخ انجام کار</h2> 
@@ -47,10 +43,6 @@ tagline:
     <a class="feature" href="/image-size">
         <img src="/icons/image-size.png" width="70" height="70" />
         <h2>نوع و حجم تصاویر ارسالی</h2> 
-    </a>
-    <a class="feature" href="/file-size">
-        <img src="/icons/file-size.png" width="70" height="70" />
-        <h2>نوع و حجم فایل های ارسالی</h2> 
     </a>
     <a class="feature" href="/disable-account">
         <img src="/icons/disable-account.png" width="70" height="70" />
